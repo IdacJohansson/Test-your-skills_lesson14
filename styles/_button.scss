@@ -9,13 +9,11 @@
   cursor: pointer;
   position: relative;
   top: 20px;
-  @extend %general-hover;
-  &__text {
-    font-family: fonts.$aleo-font;
+  font-family: fonts.$aleo-font;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 1.2px;
     color: colors.$white;
     text-align: center;
-  }
+  @extend %general-hover;
 }
