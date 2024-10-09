@@ -1,6 +1,11 @@
 @use "fonts";
 @use "colors";
 
+%general-hover:hover{
+    background-color: colors.$dark-gary;
+    opacity: 0.5;
+}
+
 .header {
   background-image: url(/images/Image_header.png);
   background-size: cover;
@@ -81,11 +86,8 @@ form {
   z-index: 1;
   position: relative;
   cursor: pointer;
+  @extend %general-hover;
   &__icon {
     font-size: 16px;
-  }
-  &:hover {
-    background-color: colors.$white-gray;
-    opacity: 0.5;
   }
 }
