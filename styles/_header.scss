@@ -1,0 +1,90 @@
+@use "fonts";
+@use "colors";
+
+.header {
+  background-image: url(/images/Image_header.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 1773px;
+  width: 100%;
+  min-height: 821px;
+  height: 100%;
+  position: relative;
+  &__header-img {
+    min-width: 1773px;
+    width: 100%;
+    min-height: 821px;
+    height: 100%;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  text-align: center;
+  position: relative;
+  &__title {
+    font-family: fonts.$josefin-font;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 26px;
+    color: colors.$white;
+  }
+  &__text {
+    font-family: fonts.$josefin-font;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 6.82px;
+    color: colors.$white;
+    margin: 0;
+  }
+}
+
+form {
+  position: relative;
+  top: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-search {
+  width: 503px;
+  height: 60px;
+  border: none;
+}
+::placeholder {
+  font-family: fonts.$josefin-font;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 2.8px;
+  color: colors.$light-gray;
+  text-align: center;
+}
+
+.btn-search {
+  width: 150px;
+  height: 60px;
+  background-color: colors.$purple;
+  color: colors.$white;
+  font-family: fonts.$aleo-font;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 1.4px;
+  border: colors.$white solid;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  &__icon {
+    font-size: 16px;
+  }
+  &:hover {
+    background-color: colors.$white-gray;
+    opacity: 0.5;
+  }
+}
