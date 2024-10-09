@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1770px;
+  width: 100%;
+  margin: 5px;
+  border: green solid;
+}
+
+main {
+  max-width: 1800px;
+  width: 100%;
+  min-height: 4271px;
+  height: 100%;
+  border: red solid;
+}
+
+/* Tablet*/
+@media screen and (max-width: 768px) {
+  main {
+    margin: 15px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 320px) {
+  main {
+    margin: 10px;
+  }
+}
