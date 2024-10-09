@@ -1,9 +1,9 @@
 @use "fonts";
 @use "colors";
 
-%general-hover:hover{
-    background-color: colors.$dark-gary;
-    opacity: 0.5;
+%general-hover:hover {
+  background-color: colors.$dark-gary;
+  opacity: 0.5;
 }
 
 .header {
@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 1773px;
+  max-width: 1773px;
   width: 100%;
   min-height: 821px;
   height: 100%;
