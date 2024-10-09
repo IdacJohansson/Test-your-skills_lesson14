@@ -59,41 +59,126 @@
 
 // section two
 
-.section-two-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 1773px;
-    width: 100%;
-    min-height: 340px;
-    height: 100%;
-    background-color: colors.$dark-gary;
+.section-two-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 1773px;
+  width: 100%;
+  min-height: 340px;
+  height: 100%;
+  background-color: colors.$dark-gary;
 }
 
-.shape-container{
-    display: flex;
-    width: 800px;
-    height: 95px;
+.shape-container {
+  display: flex;
+  width: 800px;
+  height: 95px;
 }
 
-.icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 777px;
-    font-size: 80px;
-    text-align: center;
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 777px;
+  font-size: 80px;
+  text-align: center;
 }
 
 // Section three
 
-.section-three-container{
+.section-three-container {
   background-image: url(/images/Image1_third_section.png);
   background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 0px;
+  min-width: 1770px;
+  width: 100%;
+  max-height: 700px;
+  height: 100%;
+}
+
+.gray-text-box {
+  max-width: 543px;
+  width: 100%;
+  min-height: 374px;
+  height: 100%;
+  background-color: colors.$dark-gary;
+  opacity: 0.9;
+}
+
+.position-left {
+  grid-column: span 5 / span 5;
+  grid-row: span 4 / span 4;
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+// Section four
+
+.section-four-container {
+  background-image: url(/images/Image2_third_section.png);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 0px;
   max-width: 1770px;
   width: 100%;
   min-height: 700px;
+  height: 100%;
+  margin: 0;
+}
+
+.position-right {
+  grid-column: span 4 / span 4;
+  grid-row: span 4 / span 4;
+  grid-column-start: 7;
+  grid-row-start: 3;
+}
+
+// GENERAL IN GRAY BOXES
+
+.content {
+  padding: 30px;
+  &__spain-heading {
+    width: 80px;
+    font-family: fonts.$josefin-font;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    color: colors.$light-gray;
+  }
+  &__heading {
+    width: 241px;
+    font-family: fonts.$josefin-font;
+    font-size: 20px;
+    line-height: 26px;
+    color: colors.$white;
+  }
+  &__text {
+    width: 580px;
+    height: 78px;
+    font-family: fonts.$josefin-font;
+    font-size: 16px;
+    line-height: 26px;
+    color: colors.$light-gray;
+    word-break: break-all;
+  }
+}
+
+// Section five
+
+.section-five-container {
+  background-image: url(/images/Image1_fourth_section.png);
+  background-size: cover;
+  max-width: 1770px;
+  width: 100%;
+  min-height: 731px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -101,26 +186,49 @@
   justify-content: center;
 }
 
-.gray-text-box{
-  max-width: 543px;
-  width: 100%;
-  min-height: 374px;
-  height: 100%;
-  background-color: colors.$dark-gary;
-  opacity: 0.90;
-
+.rectangle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-// Section four
-
-.section-four-container{
-  background-image: url(/images/Image2_third_section.png);
-  background-size: cover;
-  max-width: 1770px;
+.img-hiking {
+  max-width: 445px;
   width: 100%;
-  min-height: 700px;
+  max-height: 284px;
   height: 100%;
-  margin: 0;
+}
+
+.rectangle {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 10px;
+  max-width: 668px;
+  width: 100%;
+  min-height: 287px;
+  height: 100%;
+  background-color: colors.$super-dark-gray;
+  &__title {
+    width: 150px;
+    font-family: fonts.$josefin-font;
+    font-size: 20px;
+    line-height: 26px;
+    color: colors.$white;
+  }
+  &__text {
+    max-width: 581px;
+    width: 100%;
+    max-height: 165px;
+    height: 100%;
+    font-family: fonts.$josefin-font;
+    line-height: 26px;
+    font-size: 16px;
+    color: colors.$white-light-gray;
+  }
+  &span {
+    color: colors.$purple;
+  }
 }
